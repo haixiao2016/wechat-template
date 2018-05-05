@@ -1,0 +1,57 @@
+.app-msg{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 100rpx;
+}
+.app-msg image{
+  display: block;
+  width: 160rpx;
+  height: 160rpx;
+  background-color: red;
+  border-radius: 100%;
+  margin: 20rpx auto;
+}
+.app-msg-name{
+  font-size: 32rpx;
+  line-height: 50rpx;
+  margin-bottom: 20rpx;
+}
+.app-msg-desc{
+  font-size: 28rpx;
+  line-height: 50rpx;
+  color: #888;
+}
+.login-border{
+  margin:50rpx;
+  border:1px solid #e4e4e4;
+  border-radius: 50%;
+}
+.auth-msg{
+  margin:0 50rpx;
+  font-size: 32rpx;
+
+}
+
+.auth-btns{
+  display: flex;
+  margin: 100rpx auto 50rpx auto;
+  justify-content: center;
+}
+.auth-btns button{
+  min-width: 200rpx;
+  border-radius: 80rpx;
+  color: #fff;
+  font-size: 32rpx;
+  margin: 0 30rpx;
+}
+.auth-btns button::after{
+  border: none;
+}
+.auth-btns .btns-cancel{
+  background-color: #888;
+}
+.btns-ensure{
+  background-color: #ff9a44;
+}

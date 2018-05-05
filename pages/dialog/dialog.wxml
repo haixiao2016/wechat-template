@@ -1,0 +1,3 @@
+<import src="/template/dialog/dialog.wxml"/>
+<template is="dialog" data="{{ ...temp.dialog }}"/>
+<button bindtap='open'>打开弹窗</button>

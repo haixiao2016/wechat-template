@@ -1,0 +1,4 @@
+<import src="/template/leading/leading.wxml"/>
+<template is="leading" data="{{ ...temp.leading }}"/>
+
+<button bindtap='showLeading'>加载</button>

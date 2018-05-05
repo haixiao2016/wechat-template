@@ -1,0 +1,8 @@
+<template name="slip">
+  <view class="list_border" wx:for="{{list_msg}}">
+    <view class="list_msg" style="{{item.moveStyle}}" wx:key="{{index}}" bindtouchstart='t_start' bindtouchmove='t_move' bindtouchend='t_end' id="{{index}}">
+      <slot name="slip-content"></slot>
+    </view>
+    <view class="list_del" id="{{index}}" style="width:{{btnWidth}}px" bindtap='delEnter'>删除</view>
+  </view>
+</template>

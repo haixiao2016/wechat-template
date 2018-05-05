@@ -1,0 +1,15 @@
+<template name="actionSheet">
+  <view class="actionSheet-border {{close?'notLoop':''}}" wx:if="{{showActionSheet}}">
+    <view class="actionSheet-content  {{close?'notLoop':''}}">
+      <view class="actionSheet-center">
+        <view class="actionSheet-header" wx:if='{{header!=""}}' style="color:{{hederColor}}">{{header}}</view>
+        <view class="actionSheet-item" style="color:{{itemColor}}" wx:for="{{itemList}}" wx:key="{{index}}" id="{{index}}" bindtap='ensure'>
+          <image class="actionSheet-img" wx:if='{{item.imgUrl!=undefined}}' src="{{item.imgUrl}}"></image>
+          <text>{{item.text}}</text>
+        </view>
+      </view>
+      <view class="actionSheet-margin"></view>
+      <view class="actionSheet-cancel" bindtap='cancel'>取消</view>
+    </view>
+  </view>
+</template>

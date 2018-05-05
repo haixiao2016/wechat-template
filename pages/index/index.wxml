@@ -1,0 +1,43 @@
+<scroll-view class="container-border" style="height:{{borderHeight}}px" scroll-y bindscrolltolower="lower">
+<view class='border'>
+   <view wx:for="{{loopData}}" wx:key="{{index}}">
+    item
+    item
+    itemitem
+    item
+    itemitem
+    itemitemitemitem
+    item
+    item
+    itemitem
+    item
+    itemitem
+    itemitemitemitem
+  </view> 
+</view>
+<!-- 底部显示区域 -->
+<!-- <view class="footer"> -->
+    <import src="/template/infiniteScroll/infiniteScroll.wxml"/>
+    <template is="infiniteScroll" data="{{ ...temp.infiniteScroll }}"/>
+  <!-- </view> -->
+</scroll-view>
+
+
+
+
+
+<view class="tabBar" id="tabBar">
+  <view class="bar-item">
+  </view>
+  <view class="bar-item">
+    <image src="/images/1.png" animation="{{animationData}}" class='imagess' bindtap='showImg'></image>
+  </view>
+  <view class="bar-item">
+  </view>
+</view>
+<view class="tab-menu">
+  <image src="/images/2.png" class="menuBar-image menuBar-image-left {{end?'showImg1':''}} "></image>
+  <image src="/images/3.png" class="menuBar-image menuBar-image-left {{end?'showImg2':''}} "></image>
+  <image src="/images/4.png" class="menuBar-image {{end?'showImg3':''}} "></image>
+  <image src="/images/5.png" class="menuBar-image {{end?'showImg4':''}} "></image>
+</view>

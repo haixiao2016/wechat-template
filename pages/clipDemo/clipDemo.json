@@ -1,0 +1,5 @@
+{
+  "usingComponents":{
+    "slip":"/compontents/slip/slip"
+  }
+}

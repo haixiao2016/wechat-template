@@ -1,0 +1,11 @@
+<template name="leading">
+  <view class="leading-background" hidden="{{!leadingShow}}" animation="{{animation}}" style="background:{{borderBg}}">
+    <view class="leading-container" style="background:{{centerBg}}">
+      <image class="leading-icon" src="{{image}}" wx:if="{{image!=''}}"></image>  
+       <view wx:else class="leading-icon">
+        <text class="icon" style="border-color:{{iconColor}}"></text>
+      </view> 
+      <text class="leading-text" style="color:{{textColor}}">{{text}}</text>
+    </view>
+  </view>
+</template>

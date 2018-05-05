@@ -1,0 +1,16 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/notLogin/notLogin",
+    "pages/clipDemo/clipDemo",
+    "pages/leading/leading",
+    "pages/toast/toast",
+    "pages/dialog/dialog"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  }
+}

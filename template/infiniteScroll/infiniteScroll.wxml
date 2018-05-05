@@ -1,0 +1,7 @@
+<template name="infiniteScroll">
+  <view hidden="{{ !infiniteScrollShow }}" class="infiniteScroll {{scrollFirst?'infiniteScroll-border':''}}">
+    <button class="infinite-scroll-button {{ spinnerType === 'snake' ? 'infinite-scroll-snake' : '' }} {{scrollFirst?'infinite-scroll-first':''}}" loading="{{ spinnerType === 'fading-circle' || spinnerType === 'snake' }}">
+      <text class="{{ className ? className : '' }}"> {{ msg }}</text>
+    </button>
+  </view>
+</template>

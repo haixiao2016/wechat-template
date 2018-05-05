@@ -1,0 +1,65 @@
+.temp-dialog-fixed{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+.temp-dialog-contianer{
+  text-align: center;
+  font-size: 30rpx;
+  background-color: #fff;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10rpx; 
+  overflow: hidden;
+  transform: scale(0)
+}
+.temp-dialog-contianer .dialog-header{
+  height: 60rpx;
+  border-bottom: 1px solid #eee;
+  line-height: 60rpx;
+}
+.temp-dialog-contianer .dialog-content{
+  font-size: 28rpx;
+  line-height: 50rpx;
+  min-height: 150rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20rpx;
+}
+.temp-dialog-contianer .dialog-content text{
+  display:block;
+  overflow:hidden; 
+  text-overflow:ellipsis;
+  display:-webkit-box; 
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:10;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.temp-dialog-contianer .dilog-btns{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70rpx;
+  border-top: 1px solid #eee;
+}
+.temp-dialog-contianer .dilog-btns view{
+  flex: 1;
+}
+.temp-dialog-contianer .btn-cancal{
+  border-right:1px solid #eee;
+}
+.temp-dialog-contianer .btn-succcess{
+  background-color: #f81131;
+  line-height: 70rpx;
+  color: #fff;
+}

@@ -1,0 +1,12 @@
+@import './template/infiniteScroll/infiniteScroll';
+@import './template/login/login';
+@import './template/slip/slip';
+@import './template/actionSheet/actionSheet';
+@import './template/leading/leading';
+@import './template/toast/toast';
+@import './template/dialog/dialog';
+page{
+  background-color: #f4f4f4;
+}
+
+

@@ -1,0 +1,20 @@
+<template name="login">
+<view class="temp-login">
+  <view class="app-msg">
+    <image src="{{imgUrl}}"></image>
+    <text class="app-msg-name">{{appName}}</text> 
+    <text class="app-msg-desc">{{appDesc}}</text>
+  </view>
+  <view class="login-border"></view>
+  <view class="auth-msg">
+  <view class='app-msg-name'>该程序希望获取一下授权</view>
+    <view class="app-msg-desc" wx:for="{{info}}" wx:key="{{index}}">
+        ·  {{item}}
+    </view>
+  </view>
+  <view class="auth-btns">
+    <button class="btns-cancel {{btns[0].className}}" bindtap='setCancel'>{{btns[0].btnName}}</button>
+    <button class="btns-ensure {{btns[1].className}}" open-type="getUserInfo" lang = 'zh_CN' bindgetuserinfo="setEnsure">{{btns[1].btnName}}</button>
+  </view>
+</view>
+</template>

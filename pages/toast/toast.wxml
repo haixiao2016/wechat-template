@@ -1,0 +1,5 @@
+<import src="/template/toast/toast.wxml"/>
+<template is="toast" data="{{ ...temp.toast }}"/>
+<button bindtap='btnClicked'>点击</button>
+<button bindtap='btnClicked2'>点击2</button>
+<button bindtap='btnClicked3'>点击3</button>

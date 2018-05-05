@@ -1,0 +1,2 @@
+<import src="/template/login/login.wxml"/>
+<template is="login" data="{{ ...temp.login }}"/>
