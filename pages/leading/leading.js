@@ -4,16 +4,17 @@ Page({
   
   },
   onLoad: function (options) {
-    leading({})
+    leading({
+    })
     setTimeout(()=>{
       this.leadingHide()
     },2000)
   },
-  onShow: function () {
-  
-  },
   showLeading(){
-    leading({})
+    leading({
+      position:"absolute",
+      inlineBlock:true
+    })
     setTimeout(() => {
       this.leadingHide()
     }, 2000)

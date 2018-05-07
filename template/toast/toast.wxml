@@ -1,5 +1,5 @@
 <template name="toast">
-  <view class="dialog-bg" style="background:{{background}}" hidden="{{!toastShow}}">
+  <view class="dialog-bg {{bgClassName}}" animation="{{animationBg}}" style="background:{{background}}" hidden="{{!toastShow}}">
   <view class="dialog-container" animation="{{animation}}" hidden="{{!toastShow}}">
      <view class="icon icon-{{icon}}"></view>
     <text class="dialog-context">{{text}}</text> 

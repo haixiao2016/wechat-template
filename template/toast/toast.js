@@ -1,9 +1,10 @@
 import Component from '../component'
 function toast(params={}){
   const DEFAULT = {
-    toastShow:false,
+    toastShow:true,
     time: 2000,
-    text: '这是文本内容'
+    text: '这是文本内容',
+    bgClassName:''
   }
   const data = Object.assign({}, DEFAULT, params)
   const component = new Component({
@@ -11,17 +12,19 @@ function toast(params={}){
     data: data,
     methods: {
       show(){
+        this.setData({
+          [`${this.params.scope}.toastShow`]:true
+        })
         let animation = wx.createAnimation({
           duration: 200
         })
         let animationBg = wx.createAnimation({
           duration: 200
         })
-        this.setData({
-          [`${this.params.scope}.toastShow`]: true,
-          [`${this.params.scope}.animation`]: animation.scale(1).step().export(),
-          [`${this.params.scope}.animationBg`]: animationBg.opacity(1).step().export()
-        })
+          this.setData({
+            [`${this.params.scope}.animation`]: animation.scale(1).step().export(),
+            [`${this.params.scope}.animationBg`]: animationBg.opacity(1).step().export()
+          })
         if (data.time === 0){
           return
         }
@@ -45,7 +48,7 @@ function toast(params={}){
             [`${this.params.scope}.toastShow`]: false
           })
           typeof cb === `function` && cb()
-        }, 200)
+        }, 250)
       }
     }
   })

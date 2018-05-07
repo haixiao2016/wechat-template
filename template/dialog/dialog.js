@@ -20,13 +20,11 @@ function dialog(params = {}) {
         let animationBg = wx.createAnimation({
           duration: 200
         })
-        setTimeout(() => {
           this.setData({
             [`${this.params.scope}.show`]: true,
             [`${this.params.scope}.animation`]: animation.scale(1).step().export(),
             [`${this.params.scope}.animationBg`]: animationBg.opacity(1).step().export()
           })
-        }, 200)
       },
       hide(cb) {
         let animation = wx.createAnimation({

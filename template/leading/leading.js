@@ -7,9 +7,20 @@ function leading(params={}){
     image:'',
     textColor:'#fff',
     iconColor:'#fff',
-    leadingShow:true
+    leadingShow:true,
+    inlineBlock:false
   }
   const data = Object.assign({}, DEFAULT, params)
+  if (data.inlineBlock){
+    // 水平布局显示样式
+    data.centerBg = ''
+    if (data.iconColor === '#fff'){
+      data.iconColor = '#000'
+    }
+    if (data.textColor === '#fff'){
+      data.textColor = "#000"
+    }
+  }
   const component = new Component({
     scope: `temp.leading`,
     data:data,

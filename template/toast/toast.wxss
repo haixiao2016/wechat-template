@@ -44,6 +44,7 @@
   height: 100%;
   width: 100%;
   box-sizing: border-box;
+  opacity: 0;
 }
 .dialog-container{
   display: flex;
@@ -60,7 +61,7 @@
   color: white;
   padding: 20rpx;
   text-align: center;
-  transform: scale(0,0); 
+  transform: scale(0); 
 }
 .dialog-context{
   max-width:300rpx;

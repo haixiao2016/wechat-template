@@ -14,7 +14,7 @@ Page({
   btnClicked2(){
     toast({
       text: '我一秒钟就消失了',
-      background: 'rgba(125,125,125,0.8)',
+      bgClassName:'containerBorder',
       time:'1000',
       icon: 'warning',
       closed: () => {

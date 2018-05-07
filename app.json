@@ -1,8 +1,8 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/infiniteScroll/infiniteScroll",
     "pages/notLogin/notLogin",
-    "pages/clipDemo/clipDemo",
     "pages/leading/leading",
     "pages/toast/toast",
     "pages/dialog/dialog"

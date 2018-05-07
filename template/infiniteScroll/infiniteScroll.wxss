@@ -15,6 +15,7 @@ button[loading].infinite-scroll-snake::before {
   height: 26rpx;
   width: 26rpx;
   border-radius: 100%;
+  margin-right: 10rpx;
   border: 4rpx solid #666;
   border-bottom-color: transparent;
   vertical-align: middle;
@@ -41,4 +42,29 @@ button[loading].infinite-scroll-snake::before {
   align-items: center;
   justify-content: center;
   background-color: #fff;
+}
+.end{
+  padding: 0;
+  margin: 0;
+}
+.end::before{
+  display: inline-block;
+  width: 80rpx;
+  height: 26rpx;
+  content: '';
+  text-align: right;
+  margin-right: 20rpx; 
+  border-bottom: 1px solid #666;
+  vertical-align: middle;
+  transform: translateY(-50%);
+}
+.end::after{
+  display: inline-block;
+  width: 80rpx;
+  height: 26rpx;
+  content: '';
+  margin-left: 20rpx; 
+  border-bottom: 1px solid #666;
+  vertical-align: middle;
+  transform: translateY(-50%);
 }

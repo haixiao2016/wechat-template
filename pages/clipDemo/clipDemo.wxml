@@ -1,9 +1,0 @@
-<!-- <slip list_msg = "{{list_msg}}">
-  <view slot="slip-content" scope="{{props}}">
-  {{props}}
-     <text>{{list_msg[0].text}}</text> 
-  </view>
-</slip> -->
-
-<import src="/template/actionSheet/actionSheet.wxml"/>
-<template is="actionSheet" data="{{ ...temp.actionSheet }}"/>

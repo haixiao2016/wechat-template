@@ -1,0 +1,12 @@
+<scroll-view class="container-border" style="height:{{borderHeight}}px" scroll-y bindscrolltolower="lower">
+<view class='border'>
+   <view wx:for="{{loopData}}" wx:key="{{index}}">
+    <view style="padding:10rpx 30rpx;font-size:32rpx;text-indent:2em;">俄罗斯总统普京7日将在莫斯科克里姆林宫举行盛大的总统就职典礼，正式开启自己的第四个总统任期。普京就职后，新政府改组将成为社会关注的焦点。同时，各界人士也希望他能够改变当前与西方的对抗关系。</view>
+  </view> 
+</view>
+<!-- 底部显示区域 -->
+<!-- <view class="footer"> -->
+    <import src="/template/infiniteScroll/infiniteScroll.wxml"/>
+    <template is="infiniteScroll" data="{{ ...temp.infiniteScroll }}"/>
+  <!-- </view> -->
+</scroll-view>

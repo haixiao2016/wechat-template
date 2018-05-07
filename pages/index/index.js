@@ -1,78 +1,66 @@
-import { InfiniteScroll } from '../../template/index.js'
+// pages/index/index.js
 Page({
-  data: {
-    end:false,
-    animationData:{},
-    borderHeight: 400,
-    loopData:[]
-  },
-  onLoad(){
-    const self = this
-    // 获取用户可视区域的高度，减去底部tab栏的高度
-    wx.getSystemInfo({
-      success: function(res) {
-        wx.createSelectorQuery().select('#tabBar').boundingClientRect(function (rect) {
-          res.windowHeight = res.windowHeight - rect.height
-          self.setData({
-            borderHeight: res.windowHeight
-          })
-        }).exec()
-      },
-    })
-    // 加载首页数据
-    InfiniteScroll({
-      name: 'getData',
-      msg: '玩命加载中...',
-      doneMsg: '我是有底线的',
-      spinnerType: 'snake'
-    })
-    this.loadMore('first')
-  },
-  getData(done) {
-    let loopData = this.data.loopData
-    let last = loopData[loopData.length - 1] || 0
-    setTimeout(() => {
-      for (let i = 1; i <= 10; i++) {
-        loopData.push(last + i)
-      }
-      this.setData({
-        loopData: loopData
-      })
-      /**
-       * 将第一次加载的状态关闭
-       * 重置到正常加载逻辑，防止手机不能滚动屏幕
-       * this.recory()
-       */
-      this.recory()
 
-      if (loopData[loopData.length - 1] < 80) {
-        done()
-      } else {
-        // 已经加载到底部~
-        done(true)
-        // wx.navigateTo({
-        //   url: '/pages/notLogin/notLogin'
-        // })
-      }
-    }, 1000)
+  /**
+   * 页面的初始数据
+   */
+  data: {
+  
   },
-  lower(){
-    // 防止重复加载数据
-    this.loadMore()
+
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function (options) {
+  
   },
-  showImg(){
-    this.setData({
-      end:!this.data.end
-    })
-    let animation = wx.createAnimation({
-      duration:200,
-      timingFunction:'linear'
-    })
-    this.animation = animation
-    animation.scale(0.6).step()
-    animation.scale(1).step()
-    this.setData({
-      animationData: animation.export()
-    })
+
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady: function () {
+  
+  },
+
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow: function () {
+  
+  },
+
+  /**
+   * 生命周期函数--监听页面隐藏
+   */
+  onHide: function () {
+  
+  },
+
+  /**
+   * 生命周期函数--监听页面卸载
+   */
+  onUnload: function () {
+  
+  },
+
+  /**
+   * 页面相关事件处理函数--监听用户下拉动作
+   */
+  onPullDownRefresh: function () {
+  
+  },
+
+  /**
+   * 页面上拉触底事件的处理函数
+   */
+  onReachBottom: function () {
+  
+  },
+
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function () {
+  
   }
 })
